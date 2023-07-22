@@ -1,0 +1,7 @@
+#import<bits/stdc++.h>
+using namespace std;
+int i,n,p=1;
+main(){
+    for(cin>>n,n--;i++<n;) p=p*(2*n-i+1)/i;
+cout<<p;
+}
