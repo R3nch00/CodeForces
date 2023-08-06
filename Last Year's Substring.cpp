@@ -1,20 +1,18 @@
 // mes que un club //
 #import <bits/stdc++.h>
 using namespace std;
-void NISH(){
-    int n; cin>>n; string s; cin>>s;
+void NISH(){ 
+    int n;  string s; cin>>n>>s;
+    bool ok = false ;
     for(int i=0;i<=4;i++){
-        if(s.substr(0,i)+s.substr(n-4+i,4-i)=="2020"){
-            cout<<"YES"<<"\n";
-            return;
+        int j=4-i;
+        if (s.substr(0,i)+s.substr(n-j)=="2020")
+            ok=true;
         }
+    cout<<(ok ? "YES" : "NO")<<"\n";
     }
-    cout<<"NO"<<"\n";
-}
 int main(){
     int t; cin>>t;
-    ios::sync_with_stdio(false);
-    cin.tie(0);cout.tie(0);
     while(t--) NISH();
-    return 0;
 }
+	
