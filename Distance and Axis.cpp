@@ -5,13 +5,8 @@ int main(){
 	int t,n,k; cin>>t;
 	while (t--){
 		cin>>n>>k;
-		if(k>n)
-			cout<<k-n;
-		else if(k%2==n%2)
-			cout<<0;
-		else
-			cout<<1;
-		cout<<endl;
+		cout<<((k>n) ? k-n : (k%2==n%2) ? 0 : 1)<<endl;
 	}
 	return 0;
 }
+
