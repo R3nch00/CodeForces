@@ -1,7 +1,11 @@
-#include <bits/stdc++.h>
-#define ll long long
+// mes que un club //
+#import <bits/stdc++.h>
 using namespace std;
+int T;
 int main(){
-    ll int n;cin>>n;
-	cout<<(n*n+5)*n/6;
+	cin>>T;
+	while(T--){
+		int a,b,c; cin>>a>>b>>c;
+		puts(a+(c&1)>b ? "First" : "Second");
+	}
 }
