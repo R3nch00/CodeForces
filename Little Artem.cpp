@@ -2,7 +2,7 @@
 #import <bits/stdc++.h>
 using namespace std;
 void NISHI(){
-    int n,m; cin >n>>m;
+    int n,m; cin >>n>>m;
     string black_row(m,'B');
     vector<string> result(n, black_row);
     result[0][0] = 'W';
